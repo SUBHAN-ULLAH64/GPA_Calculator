@@ -1,98 +1,77 @@
-# 🎓 GPA Calculator
+# 🎓 GPA Calculator in C++
 
-A simple C++ application that calculates students' academic performance based on course credit hours and marks. The program calculates grades, Semester Grade Point Average (SGPA), and Cumulative Grade Point Average (CGPA), and stores the calculated academic records in a file for future reference.
+A simple and user-friendly **GPA Calculator** developed in C++ to help students calculate their grades, Semester GPA (SGPA), and Cumulative GPA (CGPA).
 
-## 📌 Project Overview
+## 📌 About the Project
 
-The GPA Calculator is designed to help students calculate and manage their academic results easily. The program takes course information from the user, processes marks and credit hours, calculates grades and GPA values, and saves the results in a file.
+The GPA Calculator is a beginner-friendly C++ project designed to make academic calculations easier for students. Users can enter their course marks and credit hours, calculate grades, and determine their semester or cumulative GPA.
 
-This project is developed using C++ and is suitable for learning programming fundamentals, calculations, conditional statements, loops, and file handling.
+This project demonstrates the practical use of fundamental C++ programming concepts.
 
 ## ✨ Features
 
-- **Course Input:** Enter the courses taken during a semester.
-- **Credit Hours:** Input credit hours for each course.
-- **Marks Input:** Enter marks obtained in each course.
-- **Grade Calculation:** Calculate grades based on the entered marks.
-- **SGPA Calculation:** Calculate Semester Grade Point Average.
-- **CGPA Calculation:** Calculate Cumulative Grade Point Average.
-- **File Handling:** Save calculated academic records in a file.
-- **Record Storage:** Keep saved results for future reference.
-
-## ⚙️ How It Works
-
-1. The program asks the user to enter the courses for a semester.
-2. The user enters the credit hours for each course.
-3. The user enters the marks obtained in each course.
-4. The program calculates the grade for each course according to its grading rules.
-5. The program calculates the SGPA using course grade points and credit hours.
-6. The program calculates the CGPA using cumulative academic results, according to the implemented logic.
-7. The calculated results are stored in a file.
-
-## 🧮 GPA Calculation
-
-The standard weighted SGPA formula is:
-
-**SGPA = Total of (Grade Points × Credit Hours) ÷ Total Credit Hours**
-
-For example, if a student earns 3.5 grade points in a 3-credit-hour course and 4.0 grade points in a 2-credit-hour course:
-
-SGPA = ((3.5 × 3) + (4.0 × 2)) ÷ (3 + 2)
-
-SGPA = 18.5 ÷ 5 = **3.70**
-
-The CGPA is generally calculated using the total weighted grade points across all included semesters divided by the total credit hours across those semesters. The exact calculation depends on the university's rules and the program's implementation.
+- **Course Input:** Enter course marks and credit hours.
+- **Grade Calculation:** Calculate grades according to the grading criteria implemented in the program.
+- **SGPA Calculation:** Calculate Semester Grade Point Average using course grade points and credit hours.
+- **CGPA Calculation:** Calculate Cumulative Grade Point Average based on the semester data supported by the program.
+- **User-Friendly Interface:** Simple console-based interaction.
+- **Accurate Calculations:** Perform academic calculations using C++.
 
 ## 🛠️ Technologies Used
 
 - **Programming Language:** C++
-- **Compiler:** GCC, MinGW, or another compatible C++ compiler
-- **File Handling:** C++ file streams, if implemented using `fstream`
-- **Development Environment:** Visual Studio Code or another C++ IDE
+- **Compiler:** GCC / MinGW or another compatible C++ compiler
+- **IDE / Code Editor:** Visual Studio Code or any C++-supported editor
 
-## 🚀 Getting Started
+## ⚙️ How It Works
 
-### Prerequisites
+1. Run the program.
+2. Enter the required course information.
+3. Provide marks and credit hours for each course.
+4. The program calculates grades according to its grading rules.
+5. View the calculated SGPA or CGPA supported by the program.
 
-- A C++ compiler installed on your computer.
-- Git installed if you want to clone the repository.
-- A code editor or IDE, such as Visual Studio Code.
+## 🧮 SGPA Formula
 
-### Installation
+SGPA is calculated using the following formula:
 
-1. Clone this repository:
+**SGPA = Total (Grade Points × Credit Hours) ÷ Total Credit Hours**
 
-   ```bash
-   git clone YOUR_REPOSITORY_URL
-   ```
+The exact grade-point mapping depends on the grading system implemented in the program.
 
-2. Navigate to the project folder:
+## 🚀 How to Run the Project
 
-   ```bash
-   cd GPA_Calculator
-   ```
+### 1. Clone the Repository
 
-3. Compile the source file (replace `main.cpp` with your actual filename if different):
+```bash
+git clone YOUR_REPOSITORY_URL
+```
 
-   ```bash
-   g++ main.cpp -o GPA_Calculator
-   ```
+Replace `YOUR_REPOSITORY_URL` with your GitHub repository URL.
 
-4. Run the program on Windows PowerShell:
+### 2. Open the Project Folder
 
-   ```powershell
-   .\GPA_Calculator.exe
-   ```
+```bash
+cd GPA_Calculator
+```
 
-   On Linux or macOS, run:
+### 3. Compile the Program
 
-   ```bash
-   ./GPA_Calculator
-   ```
+If your source file is named `main.cpp`, run:
 
-## 💾 Record Storage
+```bash
+g++ main.cpp -o GPA_Calculator
+```
 
-The program stores calculated academic records in a file so that results can be accessed later. The actual filename, file format, and saved information depend on the implementation.
+### 4. Run the Program
+
+On Windows PowerShell:
+
+```powershell
+.\GPA_Calculator.exe
+```
+
+Make sure a compatible C++ compiler is installed on your computer.
 
 ## 🎯 Learning Objectives
 
@@ -102,25 +81,28 @@ This project helps demonstrate:
 - User input and output
 - Conditional statements
 - Loops
-- Arithmetic operations
-- Functions, if used
-- Arrays or other data structures, if used
-- File handling
-- Problem-solving and logical thinking
+- Functions
+- Basic mathematical calculations
+- Applying C++ programming to a real-world problem
 
 ## 🔮 Future Improvements
 
-- Add a graphical user interface (GUI).
-- Support multiple students and student IDs.
-- Display previously saved academic records.
-- Add input validation for marks and credit hours.
-- Allow users to calculate results across multiple semesters.
-- Customize grading rules according to different universities.
+Possible future enhancements include:
+
+- A graphical user interface (GUI)
+- Input validation and error handling
+- Support for different university grading systems
+- Saving student results for later use
+- Generating semester-wise academic reports
+
+*Note: These are possible future features and may not be available in the current version.*
 
 ## 👨‍💻 Author
 
-**Student Developer**
+**BS Computer Science Student**
+
+Learning C++, exploring software development, and building projects to understand programming concepts deeply.
 
 ## 📄 License
 
-This project is intended for educational purposes. A specific open-source license can be added if the project is intended for public reuse.
+This project is available for educational and learning purposes. Add a specific open-source license if you decide to distribute it under particular license terms.
